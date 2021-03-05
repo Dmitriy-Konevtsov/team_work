@@ -1,6 +1,4 @@
-body {
-    margin: 0;
-}
+/* index */
 
 .container {
     width: 1200px;
@@ -8,114 +6,7 @@ body {
     box-sizing: border-box;
 }
 
-.top_section {
-    // box-sizing: border-box;
-
-  
-
-    background-image: linear-gradient(rgba(0, 0, 0, 0.9), rgba(0, 0, 0, 0.9)), url(../img/top_img/bg_image_top.png);
-
-    background-repeat: no-repeat;
-    background-size: cover;
-
-    // width: 100%;
-    // height: 1050px;
-    &_wrp {
-        position: relative;
-        box-sizing: border-box;
-        display: flex;
-        justify-content: space-between;
-    }
-}
-
-.sos_txt {
-    @include fonts(bebasneue, 400, 24px, 24px);
-    padding-top: 160px;
-    box-sizing: border-box;
-    display: block;
-    letter-spacing: 2px;
-    color: #FFFFFF;
-}
-
-.social_txt {
-    @include fonts(bebasneue, 700, 80px, 80px);
-    margin-top: 10px;
-    box-sizing: border-box;
-    display: block;
-    width: 411px;
-    letter-spacing: 3px;
-    text-transform: uppercase;
-    color: #FFFFFF;
-}
-
-.line {
-    box-sizing: border-box;
-    width: 650px;
-    border-bottom: 3px solid white;
-}
-
-.about_game_txt {
-    font-family: opensans_normal;
-    box-sizing: border-box;
-    margin-top: 60px;
-    width: 365px;
-    font-size: 18px;
-    line-height: 22px;
-    text-align: justify;
-    color: #FFFFFF;
-    padding-bottom: 358px;
-}
-
-.top_section_img {}
-
-.top_section_img_1 {
-    box-sizing: border-box;
-    border-radius: 10px;
-    position: absolute;
-    z-index: 100;
-    top: 120px;
-    right: 100px;
-}
-
-
-.top_section_img_2 {
-    box-sizing: border-box;
-    border-radius: 10px;
-    position: absolute;
-    z-index: 80;
-    top: 130px;
-    right: 75px;
-}
-
-
-.top_section_img_3 {
-    box-sizing: border-box;
-    border-radius: 10px;
-    position: absolute;
-    z-index: 30;
-    top: 140px;
-    right: 55px;
-}
-
-.arrow_btn {}
-
-.arrow {
-    position: absolute;
-    z-index: 30;
-    top: 440px;
-    right: 15px;
-    stroke: white;
-}
-
-.arrow:hover {
-    stroke: grey;
-}
-
-.arrow:active {
-    stroke: white;
-}
-
-/* index */
+/* Первая часть*/
 .header {
     &-background {
         background: radial-gradient(189.96% 61.18% at 50% 38.82%, rgba(255, 181, 72, 0) 0%, rgba(52, 44, 29, 0.80319) 73.22%, #08090A 99.74%);
@@ -126,6 +17,7 @@ body {
 
     &-menu {
         display: flex;
+        padding-left: 230px;
 
         &-logo {
             display: block;
@@ -144,7 +36,7 @@ body {
             box-sizing: border-box;
 
             &-li {
-                @include fonts(opensans, 700, 12px, 16px);
+                @include fonts(opensans_normal, 700, 12px, 16px);
                 text-transform: uppercase;
                 color: $white;
                 margin-right: 40px;
@@ -170,7 +62,7 @@ body {
             }
 
             &-txt {
-                @include fonts(opensans, 700, 12px, 16px);
+                @include fonts(opensans_normal, 700, 12px, 16px);
                 text-transform: uppercase;
                 color: $white;
 
@@ -275,13 +167,13 @@ body {
 
             &-txt {
                 display: block;
-                @include fonts(opensans, 700, 16px, 22px);
+                @include fonts(opensans_normal, 700, 16px, 22px);
                 margin-right: 11px;
             }
 
             &-price {
                 display: block;
-                @include fonts(opensans, 700, 16px, 22px);
+                @include fonts(opensans_normal, 700, 16px, 22px);
 
                 &::before {
                     content: "";
@@ -298,7 +190,7 @@ body {
             text-decoration: none;
 
             &-txt {
-                @include fonts(opensans, 700, 12px, 22px);
+                @include fonts(opensans_normal, 700, 12px, 22px);
                 text-transform: uppercase;
                 color: $white;
                 display: block;
@@ -325,6 +217,110 @@ body {
 #check-menu:checked~.header-menu-end-language-ol {
     display: block;
 }
+
+/*end Первая часть =========================================================*/
+
+/* Вторая часть*/
+.top_section {
+    // box-sizing: border-box;
+    background-image: linear-gradient(rgba(0, 0, 0, 0.9), rgba(0, 0, 0, 0.9)), url(../img/top_img/bg_image_top.png);
+    background-repeat: no-repeat;
+    background-size: cover;
+
+    // width: 100%;
+    // height: 1050px;
+    &_wrp {
+        position: relative;
+        box-sizing: border-box;
+        display: flex;
+        justify-content: space-between;
+    }
+}
+
+.sos_txt {
+    @include fonts(bebasneue, 400, 24px, 24px);
+    padding-top: 160px;
+    box-sizing: border-box;
+    display: block;
+    letter-spacing: 2px;
+    color: #FFFFFF;
+}
+
+.social_txt {
+    @include fonts(bebasneue, 700, 80px, 80px);
+    margin-top: 10px;
+    box-sizing: border-box;
+    display: block;
+    width: 411px;
+    letter-spacing: 3px;
+    text-transform: uppercase;
+    color: #FFFFFF;
+}
+
+.line {
+    box-sizing: border-box;
+    width: 650px;
+    border-bottom: 3px solid white;
+}
+
+.about_game_txt {
+    font-family: opensans_normal;
+    box-sizing: border-box;
+    margin-top: 60px;
+    width: 365px;
+    font-size: 18px;
+    line-height: 22px;
+    text-align: justify;
+    color: #FFFFFF;
+    padding-bottom: 358px;
+}
+
+.top_section_img_1 {
+    box-sizing: border-box;
+    border-radius: 10px;
+    position: absolute;
+    z-index: 100;
+    top: 120px;
+    right: 100px;
+}
+
+
+.top_section_img_2 {
+    box-sizing: border-box;
+    border-radius: 10px;
+    position: absolute;
+    z-index: 80;
+    top: 130px;
+    right: 75px;
+}
+
+
+.top_section_img_3 {
+    box-sizing: border-box;
+    border-radius: 10px;
+    position: absolute;
+    z-index: 30;
+    top: 140px;
+    right: 55px;
+}
+
+.arrow {
+    position: absolute;
+    z-index: 30;
+    top: 440px;
+    right: 15px;
+    stroke: white;
+}
+
+.arrow:hover {
+    stroke: grey;
+}
+
+.arrow:active {
+    stroke: white;
+}
+
+/*end Вторая =====================================*/
 
 /*Блок №3*/
 .survive {
@@ -364,12 +360,12 @@ body {
             }
 
             &-paragraph {
-                @include fonts(opensans_, 400, 18px, 22px);
+                @include fonts(opensans, 400, 18px, 22px);
                 margin-top: 5px;
                 margin-bottom: 28px;
             }
 
-            &:first-child{
+            &:first-child {
                 list-style-type: disc;
             }
 
@@ -382,21 +378,21 @@ body {
 
 /*end Блок №3*/
 
-
+/*Четвёртая секция*/
 // =================newsletter=============
 
-.bottom_section{
-    height: 960px;    
+.bottom_section {
+    height: 960px;
     width: 100%;
     background-image: radial-gradient(33.26% 45% at 64.32% 47.1%, rgba(255, 255, 255, 0) 3.36%, rgba(0, 0, 0, 0) 19.22%, #080A0B 99.74%), url(../img/top_img/bg_image_4.png);
     background-repeat: no-repeat;
     background-size: cover;
 
-    &_title{
+    &_title {
         box-sizing: border-box;
         text-align: center;
-        
-        &_first{
+
+        &_first {
             box-sizing: border-box;
             padding-top: 145px;
             display: block;
@@ -405,7 +401,7 @@ body {
             letter-spacing: 2px;
         }
 
-        &_second{
+        &_second {
             padding-bottom: 134px;
             box-sizing: border-box;
             display: block;
@@ -415,43 +411,221 @@ body {
         }
     }
 
-    &_table{
+    &_table {
         width: 50%;
-        border-collapse:collapse;
-        border-spacing:0;
+        border-collapse: collapse;
+        border-spacing: 0;
         height: auto;
         color: white;
 
-        &_bold{
+        &_bold {
             @include fonts(bebasneue, 700, 24px, 24px);
             color: $yellow-dust;
         }
 
-        &_normal{
+        &_normal {
             display: block;
             margin: 7px 0 31px 0;
             @include fonts(opensans_normal, 400, 18px, 22px);
             color: $white;
         }
     }
-    &_table, 
-    &_table td, 
+
+    &_table,
+    &_table td,
     &_table th {
         border: 0.5px solid rgba(151, 151, 151, 0.1);
-        
+
     }
+
     &_table td,
     &_table th {
         padding: 14px;
         width: 30px;
         height: 35px;
     }
+
     &_table th {
-        background: $pearl-light-grey; 
-        color: $white; 
-        
+        background: $pearl-light-grey;
+        color: $white;
+
     }
 }
+
+/*end Четвёртая секция =================================*/
+
+/* Пятая секция */
+.think {
+    &-background {
+        background-image: radial-gradient(0.2% 44.27% at 28.0% 47.47%, rgba(255, 255, 255, 0) 0%, rgba(0, 0, 0, 0) 51.1%, $blackish-blue 99.74%), url(../img/background_5.png);
+        background-repeat: no-repeat;
+        background-size: cover;
+    }
+
+    &-fl {
+        padding-top: 160px;
+        padding-bottom: 148px;
+        box-sizing: border-box;
+        display: flex;
+        justify-content: space-between;
+    }
+
+    &-left-side {
+        max-width: 435px;
+        margin-right: 194px;
+
+        &-question {
+            display: block;
+            @include fonts(bebasneue, 700, 24px, 24px);
+            color: $white;
+            margin-bottom: 8px;
+
+            &:nth-child(2) {
+                font-size: 80px;
+                line-height: 80px;
+            }
+
+            &-p {
+                @include fonts (opensans_normal, 400, 18px, 22px);
+                color: $white;
+                margin-top: 50px;
+                margin-bottom: 40px;
+            }
+        }
+
+        &-button {
+            @include fonts(opensans_normal, 700, 18px, 22px);
+            color: $black;
+            padding: 18px 35px;
+            background: linear-gradient(194.68deg, $yellow-dust 11.27%, $light-yellow 90.4%);
+            border-radius: 4px;
+            border: none;
+
+            &:hover {
+                transform: scale(1.5);
+            }
+        }
+    }
+
+    &-right-side {
+        &-card {
+            width: 453px;
+            background: rgba(255, 255, 255, 0.08);
+            border-radius: 10px;
+            position: relative;
+            padding-top: 26px;
+            padding-bottom: 21px;
+            box-sizing: border-box;
+            margin-bottom: 30px;
+            margin-left: 145px;
+
+            &:first-child .think-right-side-card-svg {
+                bottom: 129px;
+            }
+
+            &:nth-child(2) {
+                margin-right: 145px;
+                margin-left: 0;
+
+                & .think-right-side-card-img {
+                    background-image: url(../img/card/woman-card-between.png);
+                    background-position-y: -5px;
+                    background-size: 70px;
+                }
+            }
+
+            &:last-child {
+                margin-bottom: 0;
+
+                & .think-right-side-card-img {
+                    background-image: url(../img/card/men-card-last.png);
+                    background-position-y: -5px;
+                    background-size: 70px;
+                }
+            }
+
+            &-img {
+                width: 65px;
+                height: 65px;
+                border-radius: 50%;
+                background-repeat: no-repeat;
+                background-size: contain;
+                position: absolute;
+                z-index: 2;
+                top: 14px;
+                left: 17px;
+
+                &-orange {
+                    width: 65px;
+                    height: 65px;
+                    border-radius: 50%;
+                    background-color: $yellow-dust;
+                    position: absolute;
+                    z-index: 1;
+                    top: 15px;
+                    left: 25px;
+                }
+
+                &:first-child {
+                    background-image: url(../img/card/men-card-up.png);
+                    background-position-y: -5px;
+                    background-size: 70px;
+                }
+
+            }
+
+            &-title {
+                display: block;
+                margin-left: 109px;
+                @include fonts(bebasneue, 700, 24px, 24px);
+                letter-spacing: 2px;
+                color: $yellow-dust;
+                margin-bottom: 2px;
+            }
+
+            &-device {
+                display: block;
+                margin-left: 106px;
+                @include fonts (opensans, 400, 18px, 22px);
+                opacity: 0.5;
+                color: $white;
+                margin-bottom: 20px;
+            }
+
+            &-comment {
+                display: block;
+                margin-left: 17px;
+                @include fonts (opensans, 400, 18px, 25px);
+                color: $white;
+                margin-bottom: 9px;
+            }
+
+            &-date {
+                display: block;
+                margin-left: 17px;
+                @include fonts (opensans, 400, 14px, 20px);
+                color: $white;
+                opacity: 0.5;
+                mix-blend-mode: normal;
+            }
+
+            &-svg {
+                position: absolute;
+                bottom: 152px;
+                left: 407px;
+                opacity: 0.3;
+                fill: $white;
+
+                &:hover {
+                    fill: rgb(91, 91, 209);
+                    opacity: 1;
+                }
+            }
+        }
+    }
+}
+
+/*end Пятая секция end*/
 
 // =================SCULL=============
 
@@ -535,25 +709,104 @@ body {
 
 }
 
-.footer{
-    &_background{
-        background: $super_black;
-        display: flex;
-        justify-content: end;
+/* footer */
+.footer {
+    &-background {
+        background-image: radial-gradient(0.2% 44.27% at 28.0% 47.47%, rgba(255, 255, 255, 0) 0%, rgba(0, 0, 0, 0) 51.1%, $blackish-blue 99.74%), url(../img/bg-footer.png);
+        background-size: 100%;
+        background-repeat: no-repeat;
     }
-}
 
-.social_btn{
-    
-    &_links{
+    &-menu {
+        display: flex;
+        margin-bottom: 30px;
+    }
 
-        &_test{
+    &-logo {
+        margin-top: 0;
+    }
+
+    &-marg {
+        margin-right: 70px;
+    }
+
+    &-svgs {
+        padding: 32px 0;
+        box-sizing: border-box;
+
+        &-link {
+            &:nth-child(4) .footer-svgs-svg{
+                margin-right: 0;
+            }
+        }
+
+        &-svg {
+            fill: $white;
+            margin-right: 50px;
+
+            &:hover {
+                fill: $redcol;
+            }
+        }
+    }
+
+    &-hr {
+        opacity: 0.5;
+        border: 0.873968px solid $white;
+        margin-bottom: 22px;
+    }
+
+    &-down {
+        padding-bottom: 51px;
+        display: flex;
+        justify-content: space-between;
+
+        &-txt {
             display: block;
+            @include fonts(opensans_normal, 400, 14px, 19px);
+            color: $white;
+            opacity: 0.5;
+        }
+
+        &-link {
+            &-a {
+                text-decoration: none;
+                text-transform: uppercase;
+                letter-spacing: 0.1em;
+                @include fonts(opensans, 700, 12px, 16px);
+                color: $white;
+                margin-right: 10px;
+
+                &:nth-child(2) {
+                    border-left: 1px solid $white;
+                    padding-left: 14px;
+                }
+
+                &:nth-child(3) {
+                    border-left: 1px solid $white;
+                    padding-left: 14px;
+                    margin-right: 0;
+                }
+
+                &:hover {
+                    color: $redcol;
+                }
+
+                &:active {
+                    color: $yellow-dust;
+                }
+            }
         }
     }
 }
 
 
 
+
+
+
+
+
 /*end index end*/
 
+/*end footer end*/
